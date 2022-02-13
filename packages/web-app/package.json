@@ -21,7 +21,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "yarn build && aws s3 sync build/ s3://lockcept.kr"
+    "deploy": "yarn build && aws s3 sync build/ s3://lockcept.kr && aws cloudfront create-invalidation --distribution-id EF0AP78I5OSFJ --paths '/*'"
   },
   "eslintConfig": {
     "extends": [
