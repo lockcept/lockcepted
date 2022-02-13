@@ -1,6 +1,7 @@
 {
   "name": "lockcepted",
   "version": "0.0.1",
+  "private": true,
   "repository": "https://github.com/lockcept/lockcepted",
   "author": "lockcept <lockcept@gmail.com>",
   "license": "MIT",
@@ -27,5 +28,10 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
   }
 }
