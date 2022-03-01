@@ -1,9 +1,9 @@
-import React, { ReactElement } from "react";
+import React from "react";
 
 const social: {
   name: string;
   href: string;
-  icon: (props: React.SVGProps<SVGSVGElement>) => ReactElement;
+  icon: (props: React.ComponentProps<"svg">) => JSX.Element;
 }[] = [
   {
     name: "GitHub",
