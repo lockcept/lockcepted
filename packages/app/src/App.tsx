@@ -1,5 +1,12 @@
-function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
-}
+import Header from "./Header";
+import Footer from "./Footer";
 
-export default App;
+export default function App() {
+  return (
+    <div className="bg-white">
+      <Header />
+      <main></main>
+      <Footer />
+    </div>
+  );
+}
