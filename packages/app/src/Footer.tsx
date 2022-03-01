@@ -62,15 +62,29 @@ const social: {
 export default function Footer() {
   return (
     <footer className="bg-black">
-      <div className="max-w-7xl mx-auto py-4 px-4 overflow-hidden sm:px-6 lg:px-8">
-        <div className="mt-8 flex justify-center space-x-6">
+      <div className="max-w-7xl mx-auto pt-2 pb-4 px-4 overflow-hidden sm:px-6 lg:px-8">
+        <div className="flex justify-center space-x-6">
+          <a href="#hero" className="text-gray-400 w-8 h-8">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fillRule="evenodd"
+                d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </a>
+        </div>
+        <div className="mt-4 flex justify-center space-x-6">
           {social.map((item) => (
             <a
               key={item.name}
               href={item.href}
               className="text-gray-400 hover:text-gray-300"
             >
-              <span className="sr-only">{item.name}</span>
               <item.icon className="h-6 w-6" aria-hidden="true" />
             </a>
           ))}
