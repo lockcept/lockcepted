@@ -55,9 +55,9 @@ const gameGrid = (game: GAME_ITEM, idx: number) => {
 export default function Gamer() {
   return (
     <section id="gamer">
-      <div className="flex justify-center items-center py-16 min-h-screen bg-green-200">
+      <div className="flex justify-center items-center py-16 min-h-screen">
         <div className="flex flex-col justify-center items-center">
-          <div className="font-bold flex-1 my-6">
+          <div className="font-bold flex-1 mt-6 mb-16">
             <span>게이머 </span>
             <span className="text-green-500">록셉</span>
           </div>
