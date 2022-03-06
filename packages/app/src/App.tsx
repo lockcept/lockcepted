@@ -6,7 +6,7 @@ import Gamer from "./Gamer";
 
 export default function App() {
   return (
-    <div className="bg-white">
+    <div className="bg-white text-3xl md:text-5xl text-black text-center">
       <main>
         <Hero />
         <About />

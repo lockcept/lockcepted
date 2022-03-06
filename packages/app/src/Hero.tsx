@@ -5,7 +5,7 @@ export default function Hero() {
     <section id="hero">
       <div className="flex justify-center items-center py-16 min-h-screen px-8">
         <div className="flex flex-col justify-center items-center">
-          <div className="text-black text-6xl font-bold text-center flex-1 mb-8">
+          <div className="flex-1 mb-8 font-bold">
             <span>Welcome to </span>
             <span className="text-green-500">LOCKCEPT</span>
             <span>ed</span>
