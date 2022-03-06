@@ -12,7 +12,7 @@ export default function About() {
           <div className="flex my-8 w-full">
             <div className="flex-1 p-4 flex justify-center">
               <img
-                className="border-4 border-green-100"
+                className="ring-4 ring-green-100 rounded-full"
                 src="/lockcept.png"
                 alt="lockcept"
               />
@@ -22,7 +22,20 @@ export default function About() {
               style={{ wordBreak: "keep-all" }}
             >
               <div>
-                안녕하세요 <br /> 록셉입니다 <br /> 개발자입니다 <br />
+                저는 록셉입니다.
+                <br />
+                <br />
+                저는 풀스택 개발자입니다.
+                <br />
+                <br />
+                저는 나만의 세계를 만들어 나가는 것을 좋아합니다.
+                <br />
+                <br />
+                저는 서울대학교 산업공학과 주전공, 컴퓨터공학부 부전공을
+                이수하였습니다.
+                <br />
+                <br />
+                저는 게임을 좋아합니다.
               </div>
             </div>
           </div>
