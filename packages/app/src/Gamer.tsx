@@ -1,4 +1,5 @@
 import React from "react";
+import DefaultScrollAnimation from "./DefaultScrollAnimation";
 
 type GAME_ITEM = { title: string; img: string; href: string };
 
@@ -44,11 +45,13 @@ const gameGrid = (game: GAME_ITEM, idx: number) => {
     </div>
   );
   return (
-    <div className="my-16 mx-auto w-full max-w-7xl px-8 grid grid-cols-2 grid-flow-col-dense gap-24">
-      {swap && text}
-      {image}
-      {!swap && text}
-    </div>
+    <DefaultScrollAnimation delay={500}>
+      <div className="my-16 mx-auto w-full max-w-7xl px-8 grid grid-cols-2 grid-flow-col-dense gap-24">
+        {swap && text}
+        {image}
+        {!swap && text}
+      </div>
+    </DefaultScrollAnimation>
   );
 };
 
@@ -57,10 +60,12 @@ export default function Gamer() {
     <section id="gamer">
       <div className="flex justify-center items-center py-16 min-h-screen">
         <div className="flex flex-col justify-center items-center">
-          <div className="font-bold flex-1 mt-6 mb-16">
-            <span>게이머 </span>
-            <span className="text-green-500">록셉</span>
-          </div>
+          <DefaultScrollAnimation>
+            <div className="font-bold flex-1 mt-6 mb-16">
+              <span>게이머 </span>
+              <span className="text-green-500">록셉</span>
+            </div>
+          </DefaultScrollAnimation>
           <div className="flex-1 my-6">
             {games.map((game, idx) => gameGrid(game, idx))}
           </div>
