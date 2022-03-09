@@ -23,7 +23,7 @@ export default function Developer() {
               <a href={project.url}>
                 <div
                   key={project.title}
-                  className="py-10 px-6 bg-gray-200 text-center rounded-lg"
+                  className="py-10 px-6 bg-gray-200 text-center rounded-lg h-full"
                 >
                   <div className="space-y-10">
                     <img
