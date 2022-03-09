@@ -18,7 +18,7 @@ export default function About() {
               />
             </div>
             <div
-              className="flex flex-1 p-4 text-center text-sm md:text-lg justify-center items-center"
+              className="flex flex-1 p-4 text-left text-sm md:text-lg justify-center items-center"
               style={{ wordBreak: "keep-all" }}
             >
               <div>
