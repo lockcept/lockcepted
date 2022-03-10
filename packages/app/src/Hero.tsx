@@ -19,7 +19,14 @@ export default function Hero() {
               type="button"
               className="mt-8 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-cyan-400 hover:bg-cyan-500"
               onClick={() => {
-                window.location.href = "#about";
+                const location = (
+                  document?.querySelector("#about") as HTMLElement | null
+                )?.offsetTop;
+                if (location)
+                  window.scrollTo({
+                    top: location,
+                    behavior: "smooth",
+                  });
               }}
             >
               더 보기

@@ -3,6 +3,7 @@ import Footer from "./Footer";
 import About from "./About";
 import Developer from "./Developer";
 import Gamer from "./Gamer";
+import smoothscroll from "smoothscroll-polyfill";
 
 function Divider() {
   return (
@@ -11,6 +12,8 @@ function Divider() {
     </div>
   );
 }
+
+smoothscroll.polyfill();
 
 export default function App() {
   return (
