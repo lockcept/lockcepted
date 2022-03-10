@@ -12,7 +12,7 @@ export default function About() {
               <span className="text-green-500">록셉</span>
             </div>
           </DefaultScrollAnimation>
-          <div className="flex my-8 w-full">
+          <div className="flex flex-col md:flex-row my-8 w-full">
             <div className="flex-1 p-4 flex justify-center items-center">
               <DefaultScrollAnimation delay={250}>
                 <img

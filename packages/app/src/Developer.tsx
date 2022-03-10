@@ -22,13 +22,13 @@ export default function Developer() {
             </DefaultScrollAnimation>
           </div>
           <DefaultScrollAnimation delay={250}>
-            <div className="grid grid-cols-3 gap-8 px-8">
+            <div className="grid grd-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-8">
               {projects.map((project) => (
                 <a key={project.title} href={project.url}>
                   <div className="py-10 px-6 bg-gray-200 text-center rounded-lg h-full">
                     <div className="space-y-10">
                       <img
-                        className="mx-auto rounded-full w-56 h-56"
+                        className="mx-auto rounded-full w-32 h-32 md:w-56 md:h-56"
                         src={project.imageUrl}
                         alt={project.title}
                       />
