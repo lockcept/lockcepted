@@ -46,7 +46,11 @@ const gameGrid = (game: GAME_ITEM, idx: number) => {
   );
   return (
     <DefaultScrollAnimation delay={500} key={game.title}>
-      <div className="my-16 mx-auto w-full max-w-7xl px-8 grid grid-cols-2 grid-flow-col-dense gap-24">
+      <div className="flex md:hidden py-8 mx-auto w-full px-8 flex-col gap-6">
+        {text}
+        {image}
+      </div>
+      <div className="hidden md:grid my-16 mx-auto w-full max-w-7xl px-8 grid-cols-2 grid-flow-col-dense gap-24">
         {swap && text}
         {image}
         {!swap && text}
@@ -61,7 +65,7 @@ export default function Gamer() {
       <div className="flex justify-center items-center py-16 min-h-screen">
         <div className="flex flex-col justify-center items-center">
           <DefaultScrollAnimation>
-            <div className="font-bold flex-1 mt-6 mb-16">
+            <div className="font-bold flex-1 mt-6 mb-6 md:mb-16">
               <span>게이머 </span>
               <span className="text-green-500">록셉</span>
             </div>
