@@ -45,7 +45,7 @@ const gameGrid = (game: GAME_ITEM, idx: number) => {
     </div>
   );
   return (
-    <DefaultScrollAnimation delay={500}>
+    <DefaultScrollAnimation delay={500} key={game.title}>
       <div className="my-16 mx-auto w-full max-w-7xl px-8 grid grid-cols-2 grid-flow-col-dense gap-24">
         {swap && text}
         {image}
