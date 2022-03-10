@@ -64,7 +64,15 @@ export default function Footer() {
     <footer className="bg-black">
       <div className="max-w-7xl mx-auto pt-2 pb-4 px-4 overflow-hidden sm:px-6 lg:px-8">
         <div className="flex justify-center space-x-6">
-          <a href="#hero" className="text-gray-400 w-8 h-8">
+          <button
+            onClick={() => {
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+            }}
+            className="text-gray-400 w-8 h-8"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
@@ -76,7 +84,7 @@ export default function Footer() {
                 clipRule="evenodd"
               />
             </svg>
-          </a>
+          </button>
         </div>
         <div className="mt-4 flex justify-center space-x-6">
           {social.map((item) => (
