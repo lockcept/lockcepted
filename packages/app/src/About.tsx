@@ -1,7 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import DefaultScrollAnimation from "./DefaultScrollAnimation";
 
 export default function About() {
+  const [degree, setDegree] = useState<number>(0);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      const scrollTop = document.documentElement.scrollTop;
+      const about = document?.querySelector("#about") as HTMLElement | null;
+      const minScrollTop = about ? about.offsetTop - window.innerHeight : 0;
+      const maxScrollTop = about
+        ? about.offsetTop + about.offsetHeight
+        : document.documentElement.scrollHeight - window.innerHeight;
+      const scrollFraction =
+        (scrollTop - minScrollTop) / (maxScrollTop - minScrollTop);
+      const ratio = Math.min(Math.max(scrollFraction, 0), 1);
+
+      setDegree(ratio * 360 * 10);
+    });
+  }, []);
+
   return (
     <section id="about">
       <div className="flex justify-center items-center py-16 min-h-screen px-8">
@@ -17,6 +35,7 @@ export default function About() {
               <DefaultScrollAnimation delay={250}>
                 <img
                   className="ring-2 ring-green-100 ring-opacity-10 rounded-full"
+                  style={{ transform: `rotate(${degree}deg)` }}
                   src="/lockcept.png"
                   alt="lockcept"
                 />
