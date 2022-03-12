@@ -1,11 +1,16 @@
 {
   "short_name": "Lockcepted",
-  "name": "Lockcepted: lockcept personal page",
+  "name": "Lockcepted",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "lockcept.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
+    },
+    {
+      "src": "lockcept.png",
+      "sizes": "360x360",
+      "type": "image/png"
     }
   ],
   "start_url": ".",
