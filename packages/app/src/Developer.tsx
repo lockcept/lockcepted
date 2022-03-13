@@ -1,5 +1,5 @@
 import React from "react";
-import DefaultScrollAnimation from "./DefaultScrollAnimation";
+import TransitionInView from "./TransitionInView";
 
 const projects = [
   {
@@ -16,12 +16,12 @@ export default function Developer() {
       <div className="flex justify-center items-center py-16 min-h-screen">
         <div className="flex flex-col justify-center items-center">
           <div className="font-bold flex-1 mb-16">
-            <DefaultScrollAnimation>
+            <TransitionInView>
               <span className="text-2xl md:text-4xl">개발자 </span>
               <span className="text-green-500">록셉</span>
-            </DefaultScrollAnimation>
+            </TransitionInView>
           </div>
-          <DefaultScrollAnimation delay={250}>
+          <TransitionInView>
             <div className="grid grd-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-8">
               {projects.map((project) => (
                 <a key={project.title} href={project.url}>
@@ -45,7 +45,7 @@ export default function Developer() {
                 </a>
               ))}
             </div>
-          </DefaultScrollAnimation>
+          </TransitionInView>
         </div>
       </div>
     </section>

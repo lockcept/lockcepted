@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import DefaultScrollAnimation from "./DefaultScrollAnimation";
+import TransitionInView from "./TransitionInView";
 
 export default function About() {
   const [degree, setDegree] = useState<number>(0);
@@ -26,28 +26,28 @@ export default function About() {
     <section id="about">
       <div className="flex justify-center items-center py-16 min-h-screen px-8">
         <div className="flex flex-col justify-center items-center w-full">
-          <DefaultScrollAnimation>
+          <TransitionInView>
             <div className="flex-1 font-bold mb-8">
               <span className="text-2xl md:text-4xl">About </span>
               <span className="text-green-500">록셉</span>
             </div>
-          </DefaultScrollAnimation>
+          </TransitionInView>
           <div className="flex flex-col md:flex-row my-8 w-full">
             <div className="flex-1 p-4 flex justify-center items-center md:px-16 md:justify-end">
-              <DefaultScrollAnimation delay={250}>
+              <TransitionInView>
                 <img
                   className="ring-2 ring-green-100 ring-opacity-10 rounded-full"
                   style={{ transform: `rotate(${degree}deg)` }}
                   src="/lockcept.png"
                   alt="lockcept"
                 />
-              </DefaultScrollAnimation>
+              </TransitionInView>
             </div>
             <div
               className="flex flex-1 p-4 text-left text-sm justify-center items-center md:px-16 md:text-lg md:justify-start"
               style={{ wordBreak: "keep-all" }}
             >
-              <DefaultScrollAnimation delay={500}>
+              <TransitionInView>
                 <div>
                   저는 록셉입니다.
                   <br />
@@ -67,7 +67,7 @@ export default function About() {
                   <br />
                   저는 게임을 좋아합니다.
                 </div>
-              </DefaultScrollAnimation>
+              </TransitionInView>
             </div>
           </div>
         </div>
