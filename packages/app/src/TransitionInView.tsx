@@ -4,14 +4,16 @@ import { useInView } from "react-intersection-observer";
 
 export default function TransitionInView({
   children,
+  threshold = 0.5,
   ...props
 }: {
   children: React.ReactNode;
+  threshold?: number;
 } & TransitionClasses) {
   const [isVisible, setIsVisible] = useState<boolean>(false);
 
   const { ref, inView } = useInView({
-    threshold: 0,
+    threshold,
   });
 
   useEffect(() => {
