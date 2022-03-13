@@ -31,7 +31,7 @@ export default function TransitionInView({
       as="div"
       appear={true}
       show={isVisible}
-      enter="transition-opacity duration-[1000ms]"
+      enter="duration-[1000ms]"
       enterFrom="opacity-0"
       enterTo="opacity-100"
       {...props}

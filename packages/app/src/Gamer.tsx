@@ -45,7 +45,11 @@ const gameGrid = (game: GAME_ITEM, idx: number) => {
     </div>
   );
   return (
-    <TransitionInView key={game.title}>
+    <TransitionInView
+      key={game.title}
+      enterFrom="opacity-0 scale-50"
+      enterTo="opacity-100 scale-100"
+    >
       <div className="flex md:hidden py-8 mx-auto w-full px-8 flex-col gap-6">
         {text}
         {image}
