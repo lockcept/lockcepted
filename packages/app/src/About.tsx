@@ -8,13 +8,15 @@ export default function About() {
     window.addEventListener("scroll", () => {
       const scrollTop = document.documentElement.scrollTop;
       const about = document?.querySelector("#about") as HTMLElement | null;
-      const minScrollTop = about ? about.offsetTop - window.innerHeight : 0;
-      const maxScrollTop = about
-        ? about.offsetTop + about.offsetHeight
-        : document.documentElement.scrollHeight - window.innerHeight;
-      const scrollFraction =
-        (scrollTop - minScrollTop) / (maxScrollTop - minScrollTop);
-      const ratio = Math.min(Math.max(scrollFraction, 0), 1);
+      if (!about) {
+        setDegree(0);
+        return;
+      }
+      const minScrollTop = about.offsetTop - window.innerHeight;
+      const maxScrollTop = about.offsetTop + about.offsetHeight;
+      const index = about.offsetTop;
+      const scroll = Math.min(Math.max(scrollTop, minScrollTop), maxScrollTop);
+      const ratio = (scroll - index) / (maxScrollTop - minScrollTop);
 
       setDegree(ratio * 360 * 10);
     });
