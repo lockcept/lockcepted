@@ -21,7 +21,10 @@ export default function Developer() {
               <span className="text-green-500">록셉</span>
             </TransitionInView>
           </div>
-          <TransitionInView>
+          <TransitionInView
+            enterFrom="opacity-0 translate-y-full"
+            enterTo="opacity-100 translate-y-0"
+          >
             <div className="grid grd-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-8">
               {projects.map((project) => (
                 <a key={project.title} href={project.url}>
