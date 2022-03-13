@@ -17,7 +17,7 @@ export default function Developer() {
         <div className="flex flex-col justify-center items-center">
           <div className="font-bold flex-1 mb-16">
             <DefaultScrollAnimation>
-              <span>개발자 </span>
+              <span className="text-2xl md:text-4xl">개발자 </span>
               <span className="text-green-500">록셉</span>
             </DefaultScrollAnimation>
           </div>
@@ -25,7 +25,7 @@ export default function Developer() {
             <div className="grid grd-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-8">
               {projects.map((project) => (
                 <a key={project.title} href={project.url}>
-                  <div className="py-10 px-6 bg-gray-200 text-center rounded-lg h-full">
+                  <div className="py-10 px-6 shadow-lg bg-gray-200 text-center rounded-lg h-full">
                     <div className="space-y-10">
                       <img
                         className="mx-auto rounded-full w-32 h-32 md:w-56 md:h-56"
