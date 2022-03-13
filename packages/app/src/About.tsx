@@ -26,12 +26,12 @@ export default function About() {
         <div className="flex flex-col justify-center items-center w-full">
           <DefaultScrollAnimation>
             <div className="flex-1 font-bold mb-8">
-              <span>About </span>
+              <span className="text-2xl md:text-4xl">About </span>
               <span className="text-green-500">록셉</span>
             </div>
           </DefaultScrollAnimation>
           <div className="flex flex-col md:flex-row my-8 w-full">
-            <div className="flex-1 p-4 flex justify-center items-center">
+            <div className="flex-1 p-4 flex justify-center items-center md:px-16 md:justify-end">
               <DefaultScrollAnimation delay={250}>
                 <img
                   className="ring-2 ring-green-100 ring-opacity-10 rounded-full"
@@ -42,7 +42,7 @@ export default function About() {
               </DefaultScrollAnimation>
             </div>
             <div
-              className="flex flex-[2_2_0%] p-4 text-left text-sm md:text-lg justify-center items-center"
+              className="flex flex-1 p-4 text-left text-sm justify-center items-center md:px-16 md:text-lg md:justify-start"
               style={{ wordBreak: "keep-all" }}
             >
               <DefaultScrollAnimation delay={500}>
