@@ -1,5 +1,5 @@
 import React from "react";
-import DefaultScrollAnimation from "./DefaultScrollAnimation";
+import TransitionInView from "./TransitionInView";
 
 type GAME_ITEM = { title: string; img: string; href: string };
 
@@ -45,7 +45,7 @@ const gameGrid = (game: GAME_ITEM, idx: number) => {
     </div>
   );
   return (
-    <DefaultScrollAnimation delay={500} key={game.title}>
+    <TransitionInView key={game.title}>
       <div className="flex md:hidden py-8 mx-auto w-full px-8 flex-col gap-6">
         {text}
         {image}
@@ -55,7 +55,7 @@ const gameGrid = (game: GAME_ITEM, idx: number) => {
         {image}
         {!swap && text}
       </div>
-    </DefaultScrollAnimation>
+    </TransitionInView>
   );
 };
 
@@ -64,12 +64,12 @@ export default function Gamer() {
     <section id="gamer">
       <div className="flex justify-center items-center py-16 min-h-screen">
         <div className="flex flex-col justify-center items-center">
-          <DefaultScrollAnimation>
+          <TransitionInView>
             <div className="font-bold flex-1 mt-6 mb-6 md:mb-16">
               <span className="text-2xl md:text-4xl">게이머 </span>
               <span className="text-green-500">록셉</span>
             </div>
-          </DefaultScrollAnimation>
+          </TransitionInView>
           <div className="flex-1 my-6">
             {games.map((game, idx) => gameGrid(game, idx))}
           </div>
