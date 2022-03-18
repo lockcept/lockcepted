@@ -6,7 +6,7 @@ type GAME_ITEM = { title: string; img: string; href: string };
 const games: GAME_ITEM[] = [
   {
     title: "리그오브레전드 솔로랭크 다이아",
-    img: "tft.png",
+    img: "lol.png",
     href: "https://www.op.gg/summoners/kr/%EB%A1%9D%20%EC%85%89",
   },
   {
