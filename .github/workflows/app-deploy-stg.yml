@@ -1,0 +1,35 @@
+name: Deploy App Stg
+on:
+  push:
+    branches:
+      - deploy-stg
+    paths:
+      - "packages/app/**"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          always-auth: true
+          node-version: "14.18.2"
+          registry-url: https://registry.npmjs.org
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ap-northeast-2
+
+      - name: Install dependencies
+        run: yarn
+        working-directory: "./packages/app"
+
+      - name: Deploy
+        run: yarn deploy:stg
+        working-directory: "./packages/app"
