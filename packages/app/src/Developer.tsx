@@ -4,9 +4,21 @@ import TransitionInView from "./TransitionInView";
 const projects = [
   {
     title: "LOCKCEPTed",
-    content: "My portfolio",
+    content: "My Website",
     url: "https://lockcept.kr",
     imageUrl: "lockcept.png",
+  },
+  {
+    title: "lockceptron",
+    content: "Discord bot",
+    url: "https://github.com/lockcept/lockceptron",
+    imageUrl: "lockceptron.png",
+  },
+  {
+    title: "pagecall",
+    content: "at PPLINK",
+    url: "https://pagecall.com",
+    imageUrl: "pagecall.png",
   },
 ];
 
