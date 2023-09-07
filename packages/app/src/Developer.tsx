@@ -9,6 +9,12 @@ const projects = [
     imageUrl: "lockcept.png",
   },
   {
+    title: "quelendar",
+    content: "Quest tracking app",
+    url: "https://quelendar.lockcept.kr",
+    imageUrl: "quelendar.png",
+  },
+  {
     title: "lockceptron",
     content: "Discord bot",
     url: "https://github.com/lockcept/lockceptron",
@@ -16,7 +22,7 @@ const projects = [
   },
   {
     title: "pagecall",
-    content: "at PPLINK",
+    content: "at Pagecall",
     url: "https://pagecall.com",
     imageUrl: "pagecall.png",
   },
