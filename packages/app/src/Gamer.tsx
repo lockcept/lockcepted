@@ -15,11 +15,6 @@ const games: GAME_ITEM[] = [
     href: "https://lolchess.gg/profile/kr/%EB%A1%9D%EC%85%89",
   },
   {
-    title: "메이플스토리",
-    img: "maple.png",
-    href: "https://maple.gg/u/%EB%A1%9D%EC%85%89",
-  },
-  {
     title: "각종 스팀 게임",
     img: "steam.jpg",
     href: "https://steamcommunity.com/id/lockcept/",
