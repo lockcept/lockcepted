@@ -65,7 +65,8 @@ export default function About() {
                   이수하였습니다.
                   <br />
                   <br />
-                  취미는 게임, 피아노 연주, 운동, 프로그래밍(?)입니다. [2023]
+                  취미는 <a href="https://blog.lockcept.kr">블로그(클릭)</a>,
+                  게임, 피아노, 운동, 프로그래밍 입니다. [2024]
                 </div>
               </TransitionInView>
             </div>
