@@ -29,14 +29,14 @@ export default function About() {
           <TransitionInView>
             <div className="flex-1 font-bold mb-8">
               <span className="text-2xl md:text-4xl">About </span>
-              <span className="text-green-500">록셉</span>
+              <span className="text-lime-500">록셉</span>
             </div>
           </TransitionInView>
           <div className="flex flex-col md:flex-row my-8 w-full">
             <div className="flex-1 p-4 flex justify-center items-center md:px-16 md:justify-end">
               <TransitionInView>
                 <img
-                  className="ring-2 ring-green-100 ring-opacity-10 rounded-full"
+                  className="ring-2 ring-lime-100 ring-opacity-10 rounded-full"
                   style={{ transform: `rotate(${degree}deg)` }}
                   src="/lockcept.png"
                   alt="lockcept"

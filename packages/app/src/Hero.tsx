@@ -9,7 +9,7 @@ export default function Hero() {
           <TransitionInView>
             <div className="flex-1 mb-8 font-bold">
               <span>Welcome to </span>
-              <span className="text-green-500">LOCKCEPT</span>
+              <span className="text-lime-500">LOCKCEPT</span>
               <span>ed</span>
             </div>
           </TransitionInView>

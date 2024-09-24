@@ -42,7 +42,7 @@ export default function Developer() {
           <div className="font-bold flex-1 mb-16">
             <TransitionInView>
               <span className="text-2xl md:text-4xl">개발자 </span>
-              <span className="text-green-500">록셉</span>
+              <span className="text-lime-500">록셉</span>
             </TransitionInView>
           </div>
           <TransitionInView
