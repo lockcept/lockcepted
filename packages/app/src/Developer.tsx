@@ -3,7 +3,7 @@ import TransitionInView from "./TransitionInView";
 
 const projects = [
   {
-    title: "LOCKCEPTed",
+    title: "Lockcepted",
     content: "My Website",
     url: "https://lockcept.kr",
     imageUrl: "lockcept.png",
@@ -15,9 +15,9 @@ const projects = [
     imageUrl: "arrangept.png",
   },
   {
-    title: "quelendar",
+    title: "Quelendar",
     content: "Quest tracking app",
-    url: "https://quelendar.lockcept.kr",
+    url: "https://github.com/lockcept/Quelendar",
     imageUrl: "quelendar.png",
   },
   {
