@@ -49,27 +49,30 @@ export default function About() {
             >
               <TransitionInView>
                 <div>
-                  안녕하세요 록셉(lockcept)입니다.
+                  Hello, I'm Lockcept
                   <br />
                   <br />
-                  풀스택 개발자 근무 경험이 있습니다.
+                  I majored in Industrial Engineering at Seoul National
+                  University
+                  <br />
+                  and completed a double major in Computer Science.
                   <br />
                   <br />
-                  나의 세계를 창조하고 싶습니다.
+                  I have experience working as a full-stack developer.
                   <br />
                   <br />
-                  문제 해결을 위한 끊임없는 고민이 중요하다고 생각합니다.
+                  I have a grand dream of creating my own universe.
                   <br />
                   <br />
-                  서울대학교 산업공학과 주전공, 컴퓨터공학부 복수전공을
-                  이수하였습니다.
+                  Consistent problem-solving is the core of my philosophy.
                   <br />
                   <br />
-                  취미는 블로깅, 게임, 피아노, 운동, 프로그래밍 입니다. [2024]
+                  My hobbies include blogging, gaming, playing the piano,
+                  exercising, and programming. [2024]
                   <br />
-                  <br />더 많은 생각은{" "}
-                  <a href="https://blog.lockcept.kr">블로그(클릭)</a>에서
-                  만나보실 수 있습니다.
+                  <br />
+                  For more thoughts, you can find them on my{" "}
+                  <a href="https://blog.lockcept.kr">blog (click here)</a>.
                 </div>
               </TransitionInView>
             </div>
