@@ -66,7 +66,7 @@ export default function Gamer() {
           <TransitionInView>
             <div className="font-bold flex-1 mt-6 mb-6 md:mb-16">
               <span className="text-2xl md:text-4xl">게이머 </span>
-              <span className="text-green-500">록셉</span>
+              <span className="text-lime-500">록셉</span>
             </div>
           </TransitionInView>
           <div className="flex-1 my-6">

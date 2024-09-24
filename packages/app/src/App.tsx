@@ -8,7 +8,7 @@ import smoothscroll from "smoothscroll-polyfill";
 function Divider() {
   return (
     <div className="w-full h-[2px] px-[10%]">
-      <div className="bg-green-200 w-full h-full rounded-full" />
+      <div className="bg-lime-400 w-full h-full rounded-full" />
     </div>
   );
 }
