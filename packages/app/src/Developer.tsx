@@ -9,12 +9,6 @@ const projects = [
     imageUrl: "lockcept.png",
   },
   {
-    title: "Arrangept",
-    content: "Words Arranging Service",
-    url: "https://arrangept.lockcept.kr",
-    imageUrl: "arrangept.png",
-  },
-  {
     title: "Quelendar",
     content: "Quest tracking app",
     url: "https://github.com/lockcept/Quelendar",
